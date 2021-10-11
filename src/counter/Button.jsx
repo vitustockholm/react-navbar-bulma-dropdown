@@ -3,7 +3,7 @@ import React, { forwardRef } from 'react';
 
 const Button = forwardRef(({ action, text }, ref) => {
   return (
-    <button onClick={action} ref={ref}>
+    <button onClick={action} ref={ref} class='button is-black' disabled>
       {text}
     </button>
   );

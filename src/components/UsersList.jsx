@@ -12,8 +12,12 @@ const UsersList = () => {
   const [users, setUsers] = useState([]);
   const [user, setUser] = useState({});
   const [isLoading, setIsLoading] = useState(true);
-
   const [isOpen, setIsOpen] = useState(false);
+  // context state and title
+  const [titleModal, setTitle] = useState(''); //empty innitial
+  const [contextModal, setContextModal] = useState(''); //empty innitial
+  const [brightness, setBrightness] = useState('1');
+  const [disabled, setDisabled] = useState(true);
 
   // -- side effects
   useEffect(() => {
@@ -64,8 +68,18 @@ const UsersList = () => {
             ))}
           </List>
         )}
+        <span>------</span>
       </ListWrapper>
-      {isOpen && <Modal action={closeModal}>{createUser()}</Modal>}
+      {isOpen && (
+        <Modal
+          titleModal='titlasssss'
+          contextModal='testcontext'
+          action={closeModal}
+          brightness={brightness}
+        >
+          {createUser()}
+        </Modal>
+      )}
     </>
   );
 };

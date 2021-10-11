@@ -43,6 +43,6 @@ export const ModalClose = styled.div`
 export const ModalContent = styled.div`
   border: 5px solid #eee;
   padding: 15px;
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
 `;
