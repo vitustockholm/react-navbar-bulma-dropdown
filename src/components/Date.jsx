@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { getCurrentDate } from './currentDate';
 
 const Date = () => {

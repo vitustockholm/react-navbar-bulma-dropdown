@@ -21,6 +21,14 @@ const Nav = () => {
 
         <div id='navbarBasicExample' className='navbar-menu'>
           <div className='navbar-start'>
+            <img
+              src='https://bulma.io/images/bulma-logo.png'
+              alt='img'
+              className='img navbar-brand'
+              width='112'
+              height='28'
+              style={{ margin: '5px' }}
+            />
             <a href='/' className='navbar-item'>
               Home
             </a>
